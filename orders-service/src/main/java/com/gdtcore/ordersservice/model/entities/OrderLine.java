@@ -25,12 +25,9 @@ public class OrderLine {
     @Column(nullable = false)
     private Integer quantity;
 
-    @Column(nullable = false)
-    private BigDecimal price;
-
-    @ManyToOne
-    @JoinColumn(name = "orders_id", nullable = false)
-    private Orders orders;
+//    @ManyToOne
+//    @JoinColumn(name = "orders_id", nullable = false)
+//    private Orders orders;
 
 //    @ManyToOne
 //    @JoinColumn(name = "product_id")

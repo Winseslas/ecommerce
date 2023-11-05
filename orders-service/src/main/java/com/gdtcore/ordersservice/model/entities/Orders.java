@@ -28,7 +28,7 @@ public class Orders {
     @Column(nullable = true)
     private String description;
 
-    @OneToMany(mappedBy = "orders", cascade = CascadeType.ALL)
+    @OneToMany(cascade = CascadeType.ALL)
     private List<OrderLine> orderLines;
 
     @CreatedDate
